@@ -1,0 +1,5 @@
+#!/bin/bash
+echo 'inter name'
+read name
+echo '#!/bin/bash' > ${name}
+
