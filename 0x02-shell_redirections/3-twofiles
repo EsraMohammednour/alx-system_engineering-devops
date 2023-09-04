@@ -1,2 +1,2 @@
 #!/bin/bash
-cat /etc/shadow
+cat /etc/passwd:shadow
