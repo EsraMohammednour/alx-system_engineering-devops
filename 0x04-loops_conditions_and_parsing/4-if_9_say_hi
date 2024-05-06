@@ -6,13 +6,12 @@ count=0
 # Using a while loop to display "Best School" 10 times
 while [ $count -lt 11 ]
 do
-    if [ $count -eq 9 ]
+	if (($count == 9))
     then 
         echo "Hi"
-        ((count++))
     else
 
         echo "Best School"
-        ((count++))
     fi
+    ((i+=1))
 done
