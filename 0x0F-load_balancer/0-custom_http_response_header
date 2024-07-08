@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#Config another server
+apt_get update
+apt_get -y install nginx
+touch /var/www/html/index.html
+echo "Hello world!" > /var/www/html/index.html
+touch /etc/nginx/html/404.html
+echo "Ceci n'est pas une page" > /etc/nginx/html/404.html
+
