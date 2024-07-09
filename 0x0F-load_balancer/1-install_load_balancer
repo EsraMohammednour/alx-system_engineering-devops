@@ -2,9 +2,9 @@
 # Install haproxy
 sudo apt-get update
 sudo apt-get -y install haproxy
-sudo change $USER:USER /etc/haproxy/haproxy.cfg
+sudo chown $USER:USER /etc/haproxy/haproxy.cfg
 
-echo"
+echo "
 frontend cryptotechcoder
     bind *:80
     mode http
