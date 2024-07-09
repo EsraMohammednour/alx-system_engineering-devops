@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# Install haproxy
+sudo apt-get update
+sudo apt-get -y install haproxy
+sudo change $USER:USER /etc/haproxy/haproxy.cfg
+
+echo"
+frontend cryptotechcoder
+    bind *:80
+    mode http
+    default_backend app
+
+backend app
+    balance roundrobin
+    server 522050-web-01 34.224.62.186:80 check
+    server 522050-web-02 100.26.17.62:80 check" >> /etc/haproxy/haproxy.cfg
+
+sudo service haproxy restart
