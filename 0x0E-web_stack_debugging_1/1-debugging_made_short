@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 #Configration an nginx server to lisin to port 80
 ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
-service nginx start
+service nginx restart
 kill "$(pgrap 'nginx' | head -1)"
