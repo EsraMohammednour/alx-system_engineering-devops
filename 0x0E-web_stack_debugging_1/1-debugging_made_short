@@ -2,4 +2,4 @@
 #Configration an nginx server to lisin to port 80
 ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 service nginx restart
-kill "$(pgrap 'nginx' | head -1)"
+kill "$(pgrep 'nginx' | head -1)"
