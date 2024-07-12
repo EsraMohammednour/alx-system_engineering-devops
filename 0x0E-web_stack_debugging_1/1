@@ -1,0 +1,5 @@
+rm: cannot remove '/etc/nginx/sites_enabled/default': No such file or directory
+ln: invalid option -- 'm'
+Try 'ln --help' for more information.
+Failed to restart nginx.service: Interactive authentication required.
+See system logs and 'systemctl status nginx.service' for details.
