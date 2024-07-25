@@ -6,4 +6,4 @@ apt-get -y install nginx
 sudo touch /var/www/html/index.html
 echo 'Hello World!' > /var/www/html/index.html
 sudo sed -i '/server_name _;/a \\n\tlocation = /redirect_me {\n\t\treturn 301 http://www.youtube.com/;\n\t}' /etc/nginx/sites-available/default
-sudo ervice nginx restart
+sudo service nginx restart
